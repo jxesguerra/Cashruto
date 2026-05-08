@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mycashapp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="Theme.Mycashapp" parent="Base.Theme.Mycashapp" />
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    android:id="@+id/ChangeNumber">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/transparentbrown">
+
+        <View
+            android:id="@+id/notifvar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/brown"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/changNum_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/Number"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Put your mobile number to get started."
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:padding="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="20dp"
+                            android:layout_marginHorizontal="50dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/orange"
+                                android:text="+63"
+                                android:minHeight="40dp"
+                                android:paddingHorizontal="10dp"
+                                android:textColor="@color/white"
+                                android:gravity="center"/>
+
+                            <EditText
+                                android:id="@+id/num"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/orange"
+                                android:layout_weight="1"
+                                android:maxLength="10"
+                                android:inputType="number"
+                                android:minHeight="40dp"
+                                android:textColor="@color/white"
+                                android:layout_marginHorizontal="5dp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="By tapping next,we'llccollect your mobile number's \nnetwork information to be able to send you a \n One-Time Password(OTP)"
+                            android:textColor="@color/gray"
+                            android:textSize="15sp"
+                            android:padding="10dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                        <Button
+                            android:id="@+id/next"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="NEXT"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:backgroundTint="@color/red"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--                    otp-->
+            <LinearLayout
+                android:id="@+id/OTP"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Verify with text Message"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="We sent a 6-digit authentication code to your \n registered phone number"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="+63-995****512"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Please enter the Authentication code"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:layout_marginHorizontal="50dp">
+
+                    <EditText
+                        android:id="@+id/OTP1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:background="@color/orange"
+                        android:layout_weight="1"
+                        android:maxLength="1"
+                        android:minHeight="40dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="5dp"/>
+
+                    <EditText
+                        android:id="@+id/OTP2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:background="@color/orange"
+                        android:layout_weight="1"
+                        android:maxLength="1"
+                        android:minHeight="40dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="5dp"/>
+
+                    <EditText
+                    android:id="@+id/OTP3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="@color/orange"
+                    android:layout_weight="1"
+                    android:maxLength="1"
+                    android:minHeight="40dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="5dp"/>
+
+                    <EditText
+                        android:id="@+id/OTP4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:background="@color/orange"
+                        android:layout_weight="1"
+                        android:maxLength="1"
+                        android:minHeight="40dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="5dp"/>
+
+                    <EditText
+                        android:id="@+id/OTP5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/orange"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:minHeight="40dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/OTP6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:background="@color/orange"
+                        android:layout_weight="1"
+                        android:maxLength="1"
+                        android:minHeight="40dp"
+                        android:textColor="@color/white"
+                        android:layout_marginHorizontal="5dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Didn't get the code?"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:id="@+id/Resend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Resend Code"
+                    android:textColor="@color/orange"
+                    android:textSize="15sp"
+                    android:padding="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
